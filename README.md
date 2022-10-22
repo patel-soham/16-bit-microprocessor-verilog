@@ -10,5 +10,9 @@ A final year undergraduate major project. (Dec 2019 - Mar 2020)
 
 ---
 **Files**
-1. ddd
-2. ddd2 
+1. [Top module]
+2. [ALU]
+3. [Decoder]
+4. [Memory]
+5. [Register]
+6. [Flag Register] 
