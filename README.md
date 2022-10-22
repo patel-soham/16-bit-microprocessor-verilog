@@ -9,10 +9,13 @@ A final year undergraduate major project. (Dec 2019 - Mar 2020)
 - [Final presentation](<Major Project PPT.pdf>)
 
 ---
-**Files**
-1. [Top module]
-2. [ALU]
-3. [Decoder]
-4. [Memory]
-5. [Register]
-6. [Flag Register] 
+**Design Files**
+1. [Top module](<project files/TopModule.v>)
+2. [Arithmetic and Logic Unit](<project files/ArithmeticLogicUnit.v>)
+3. [Decoder](<project files/Decoder.v>)
+4. [Memory](<project files/Memory.v>)
+5. [Register](<project files/Register.v>)
+6. [Flag Register](<project files/FlagRegister.v>) 
+7. [General Purpose Register](<project files/GeneralPurposeRegister.v>)
+8. [Instruction Register](<project files/InstructionRegister.v>)
+9. [Program Counter](<project files/ProgramCounter.v>)
