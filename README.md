@@ -5,9 +5,10 @@ A final year undergraduate major project. (Dec 2019 - Mar 2020)
 
 ---
 **Documents**
-- 1. [Final submitted report](<Major Project Full Report.pdf>)
-- 2. [Final presentation](<Major Project PPT.pdf>)
+- [Final submitted report](<Major Project Full Report.pdf>)
+- [Final presentation](<Major Project PPT.pdf>)
 
 ---
 **Files**
-- 1. 
+1. ddd
+2. ddd2 
