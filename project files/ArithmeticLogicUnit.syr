@@ -1,0 +1,382 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ArithmeticLogicUnit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ArithmeticLogicUnit.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ArithmeticLogicUnit"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-csg324
+
+---- Source Options
+Top Module Name                    : ArithmeticLogicUnit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Final_Year_Project\EC_448_Major_Project\ArithmeticLogicUnit.v" into library work
+Parsing module <ArithmeticLogicUnit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ArithmeticLogicUnit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ArithmeticLogicUnit>.
+    Related source file is "D:\Final_Year_Project\EC_448_Major_Project\ArithmeticLogicUnit.v".
+        word_size = 16
+        high_impedance = 16'bzzzzzzzzzzzzzzzz
+        addition = 4'b0000
+        substraction = 4'b0001
+        increment = 4'b0010
+        decrement = 4'b0011
+        xor_op = 4'b0000
+        and_op = 4'b0001
+        or_op = 4'b0010
+        xnor_op = 4'b0011
+        nand_op = 4'b0100
+        nor_op = 4'b0101
+        high = 4'b1111
+        low = 4'b1110
+        input1 = 4'b1111
+        input2 = 4'b1110
+        invert_in1 = 4'b1101
+        invert_in2 = 4'b1100
+WARNING:Xst:647 - Input <in1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <in2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <equal>.
+    Found 1-bit register for signal <greater_than>.
+    Found 1-bit register for signal <zero>.
+    Found 1-bit register for signal <parity>.
+    Found 1-bit register for signal <sign>.
+    Found 16-bit register for signal <result>.
+    Found 1-bit register for signal <carry_out>.
+    Found 16-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_37_o> created at line 232
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <ArithmeticLogicUnit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 7
+ 1-bit register                                        : 6
+ 16-bit register                                       : 1
+# Comparators                                          : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 2
+# Xors                                                 : 1
+ 1-bit xor16                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <carry_out> has a constant value of 0 in block <ArithmeticLogicUnit>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Comparators                                          : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 2
+# Xors                                                 : 1
+ 1-bit xor16                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <carry_out> has a constant value of 0 in block <ArithmeticLogicUnit>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sign> in Unit <ArithmeticLogicUnit> is equivalent to the following FF/Latch, which will be removed : <result_15> 
+WARNING:Xst:1293 - FF/Latch <equal> has a constant value of 0 in block <ArithmeticLogicUnit>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sign> in Unit <ArithmeticLogicUnit> is equivalent to the following 10 FFs/Latches, which will be removed : <result_5> <result_6> <result_7> <result_8> <result_9> <result_10> <result_11> <result_12> <result_13> <result_14> 
+INFO:Xst:2261 - The FF/Latch <result_2> in Unit <ArithmeticLogicUnit> is equivalent to the following FF/Latch, which will be removed : <result_3> 
+
+Optimizing unit <ArithmeticLogicUnit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ArithmeticLogicUnit, actual ratio is 0.
+FlipFlop sign has been replicated 11 time(s) to handle iob=true attribute.
+FlipFlop result_2 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ArithmeticLogicUnit.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 11
+#      GND                         : 1
+#      LUT2                        : 2
+#      LUT5                        : 2
+#      LUT6                        : 6
+# FlipFlops/Latches                : 20
+#      FDE                         : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 30
+#      IBUF                        : 8
+#      OBUF                        : 22
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   10  out of  27288     0%  
+    Number used as Logic:                10  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     10
+   Number with an unused Flip Flop:      10  out of     10   100%  
+   Number with an unused LUT:             0  out of     10     0%  
+   Number of fully used LUT-FF pairs:     0  out of     10     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          63
+ Number of bonded IOBs:                  31  out of    190    16%  
+    IOB Flip Flops/Latches:              20
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 4.170ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 185 / 40
+-------------------------------------------------------------------------
+Offset:              4.170ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       zero (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   1.118  reset_IBUF (reset_IBUF)
+     LUT6:I1->O           14   0.203   1.322  Mmux_n00511111 (Mmux_n0051111)
+     LUT6:I0->O            1   0.203   0.000  func[3]_GND_1_o_equal_38_o<15>1 (func[3]_GND_1_o_equal_38_o)
+     FDE:D                     0.102          zero
+    ----------------------------------------
+    Total                      4.170ns (1.730ns logic, 2.440ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            sign_1 (FF)
+  Destination:       result<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sign_1 to result<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  sign_1 (sign_1)
+     OBUF:I->O                 2.571          result_15_OBUF (result<15>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.38 secs
+ 
+--> 
+
+Total memory usage is 256972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

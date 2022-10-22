@@ -1,0 +1,474 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: GeneralPurposeRegister.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GeneralPurposeRegister.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GeneralPurposeRegister"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-csg324
+
+---- Source Options
+Top Module Name                    : GeneralPurposeRegister
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Final_Year_Project\EC_448_Major_Project\GeneralPurposeRegister.v" into library work
+Parsing module <GeneralPurposeRegister>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <GeneralPurposeRegister>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <GeneralPurposeRegister>.
+    Related source file is "D:\Final_Year_Project\EC_448_Major_Project\GeneralPurposeRegister.v".
+        word_size = 16
+        high_impedance = 16'bzzzzzzzzzzzzzzzz
+        zero = 16'b0000000000000000
+    Found 1-bit register for signal <mode[2]_clk_DFF_17>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_18>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_19>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_20>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_21>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_22>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_23>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_24>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_25>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_26>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_27>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_28>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_29>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_30>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_31>.
+    Found 1-bit register for signal <mode[2]_clk_DFF_32>.
+    Found 128-bit register for signal <n0177[127:0]>.
+    Found 16-bit register for signal <data_out>.
+    Found 16-bit 8-to-1 multiplexer for signal <_n0224> created at line 98.
+    Found 1-bit tristate buffer for signal <alu_2nd_in<15>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<14>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<13>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<12>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<11>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<10>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<9>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<8>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<7>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<6>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<5>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<4>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<3>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<2>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<1>> created at line 78
+    Found 1-bit tristate buffer for signal <alu_2nd_in<0>> created at line 78
+    Found 1-bit tristate buffer for signal <data<15>> created at line 80
+    Found 1-bit tristate buffer for signal <data<14>> created at line 80
+    Found 1-bit tristate buffer for signal <data<13>> created at line 80
+    Found 1-bit tristate buffer for signal <data<12>> created at line 80
+    Found 1-bit tristate buffer for signal <data<11>> created at line 80
+    Found 1-bit tristate buffer for signal <data<10>> created at line 80
+    Found 1-bit tristate buffer for signal <data<9>> created at line 80
+    Found 1-bit tristate buffer for signal <data<8>> created at line 80
+    Found 1-bit tristate buffer for signal <data<7>> created at line 80
+    Found 1-bit tristate buffer for signal <data<6>> created at line 80
+    Found 1-bit tristate buffer for signal <data<5>> created at line 80
+    Found 1-bit tristate buffer for signal <data<4>> created at line 80
+    Found 1-bit tristate buffer for signal <data<3>> created at line 80
+    Found 1-bit tristate buffer for signal <data<2>> created at line 80
+    Found 1-bit tristate buffer for signal <data<1>> created at line 80
+    Found 1-bit tristate buffer for signal <data<0>> created at line 80
+    Found 1-bit tristate buffer for signal <data_out<15>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<14>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<13>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<12>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<11>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<10>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<9>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<8>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<7>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<6>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<5>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<4>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<3>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<2>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<1>> created at line 82
+    Found 1-bit tristate buffer for signal <data_out<0>> created at line 82
+    Summary:
+	inferred 160 D-type flip-flop(s).
+	inferred  43 Multiplexer(s).
+	inferred  48 Tristate(s).
+Unit <GeneralPurposeRegister> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 18
+ 1-bit register                                        : 16
+ 128-bit register                                      : 1
+ 16-bit register                                       : 1
+# Multiplexers                                         : 43
+ 1-bit 2-to-1 multiplexer                              : 16
+ 128-bit 2-to-1 multiplexer                            : 1
+ 16-bit 2-to-1 multiplexer                             : 25
+ 16-bit 8-to-1 multiplexer                             : 1
+# Tristates                                            : 48
+ 1-bit tristate buffer                                 : 48
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+# Multiplexers                                         : 43
+ 1-bit 2-to-1 multiplexer                              : 16
+ 128-bit 2-to-1 multiplexer                            : 1
+ 16-bit 2-to-1 multiplexer                             : 25
+ 16-bit 8-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <mode[2]_clk_DFF_17> in Unit <GeneralPurposeRegister> is equivalent to the following 15 FFs/Latches, which will be removed : <mode[2]_clk_DFF_18> <mode[2]_clk_DFF_21> <mode[2]_clk_DFF_19> <mode[2]_clk_DFF_20> <mode[2]_clk_DFF_22> <mode[2]_clk_DFF_23> <mode[2]_clk_DFF_24> <mode[2]_clk_DFF_25> <mode[2]_clk_DFF_28> <mode[2]_clk_DFF_26> <mode[2]_clk_DFF_27> <mode[2]_clk_DFF_29> <mode[2]_clk_DFF_30> <mode[2]_clk_DFF_31> <mode[2]_clk_DFF_32> 
+WARNING:Xst:2042 - Unit GeneralPurposeRegister: 16 internal tristates are replaced by logic (pull-up yes): data_out<0>1, data_out<10>1, data_out<11>1, data_out<12>1, data_out<13>1, data_out<14>1, data_out<15>1, data_out<1>1, data_out<2>1, data_out<3>1, data_out<4>1, data_out<5>1, data_out<6>1, data_out<7>1, data_out<8>1, data_out<9>1.
+
+Optimizing unit <GeneralPurposeRegister> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GeneralPurposeRegister, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 145
+ Flip-Flops                                            : 145
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : GeneralPurposeRegister.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 365
+#      INV                         : 1
+#      LUT2                        : 16
+#      LUT3                        : 1
+#      LUT4                        : 17
+#      LUT5                        : 42
+#      LUT6                        : 272
+#      MUXF7                       : 16
+# FlipFlops/Latches                : 145
+#      FD                          : 145
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 76
+#      IBUF                        : 28
+#      IOBUF                       : 16
+#      OBUF                        : 16
+#      OBUFT                       : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             145  out of  54576     0%  
+ Number of Slice LUTs:                  349  out of  27288     1%  
+    Number used as Logic:               349  out of  27288     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    349
+   Number with an unused Flip Flop:     204  out of    349    58%  
+   Number with an unused LUT:             0  out of    349     0%  
+   Number of fully used LUT-FF pairs:   145  out of    349    41%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          77
+ Number of bonded IOBs:                  77  out of    190    40%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 145   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.791ns (Maximum Frequency: 358.295MHz)
+   Minimum input arrival time before clock: 8.715ns
+   Maximum output required time after clock: 5.210ns
+   Maximum combinational path delay: 7.189ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.791ns (frequency: 358.295MHz)
+  Total number of paths / destination ports: 1329 / 145
+-------------------------------------------------------------------------
+Delay:               2.791ns (Levels of Logic = 3)
+  Source:            register_0_96 (FF)
+  Destination:       register_0_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: register_0_96 to register_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.864  register_0_96 (register_0_96)
+     LUT6:I2->O            1   0.203   0.000  Mmux__n0224_3 (Mmux__n0224_3)
+     MUXF7:I1->O           9   0.140   0.830  Mmux__n0224_2_f7 (_n0224<0>)
+     LUT5:I4->O            1   0.205   0.000  Mmux_n022011 (n0220<0>)
+     FD:D                      0.102          data_out_0
+    ----------------------------------------
+    Total                      2.791ns (1.097ns logic, 1.694ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2884 / 145
+-------------------------------------------------------------------------
+Offset:              8.715ns (Levels of Logic = 5)
+  Source:            mode<1> (PAD)
+  Destination:       register_0_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: mode<1> to register_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           131   1.222   2.187  mode_1_IBUF (mode_1_IBUF)
+     LUT3:I0->O          129   0.205   2.058  Mmux_register[7][15]_mode[2]_mux_44_OUT1131 (Mmux_register[7][15]_mode[2]_mux_44_OUT113)
+     LUT5:I3->O           32   0.203   1.520  Mmux_register[7][15]_acc_input[0]_MUX_167_o1161 (Mmux_register[7][15]_acc_input[0]_MUX_167_o116)
+     LUT5:I2->O            1   0.205   0.808  Mmux_register[7][15]_mode[2]_mux_44_OUT10021_SW8 (N49)
+     LUT6:I3->O            1   0.205   0.000  Mmux_register[7][15]_acc_input[0]_MUX_167_o1131 (register[7][15]_acc_input[7]_MUX_160_o)
+     FD:D                      0.102          register_0_7
+    ----------------------------------------
+    Total                      8.715ns (2.142ns logic, 6.573ns route)
+                                       (24.6% logic, 75.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 64 / 48
+-------------------------------------------------------------------------
+Offset:              5.210ns (Levels of Logic = 2)
+  Source:            mode[2]_clk_DFF_17 (FF)
+  Destination:       data<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mode[2]_clk_DFF_17 to data<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              33   0.447   1.410  mode[2]_clk_DFF_17 (mode[2]_clk_DFF_17)
+     LUT2:I0->O            1   0.203   0.579  data_out<15>1LogicTrst1 (data_out<15>1)
+     IOBUF:I->IO               2.571          data_15_IOBUF (data<15>)
+    ----------------------------------------
+    Total                      5.210ns (3.221ns logic, 1.989ns route)
+                                       (61.8% logic, 38.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 80 / 32
+-------------------------------------------------------------------------
+Delay:               7.189ns (Levels of Logic = 3)
+  Source:            mode<1> (PAD)
+  Destination:       data<15> (PAD)
+
+  Data Path: mode<1> to data<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           131   1.222   2.187  mode_1_IBUF (mode_1_IBUF)
+     LUT4:I1->O           16   0.205   1.004  enable_mode[2]_AND_1_o_inv1 (enable_mode[2]_AND_1_o_inv)
+     IOBUF:T->IO               2.571          data_15_IOBUF (data<15>)
+    ----------------------------------------
+    Total                      7.189ns (3.998ns logic, 3.191ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.791|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.83 secs
+ 
+--> 
+
+Total memory usage is 260044 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

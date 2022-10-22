@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"D:/Final_Year_Project/EC_448_Major_Project/TopModule.v" Line 160: Target &lt;<arg fmt="%s" index="1">IR_reset</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"D:/Final_Year_Project/EC_448_Major_Project/TopModule.v" Line 161: Target &lt;<arg fmt="%s" index="1">PC_reset</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+</messages>
+

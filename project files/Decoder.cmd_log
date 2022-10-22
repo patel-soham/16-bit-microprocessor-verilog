@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Final_Year_Project/EC_448_Major_Project/Decoder.xst" -ofn "D:/Final_Year_Project/EC_448_Major_Project/Decoder.syr" 

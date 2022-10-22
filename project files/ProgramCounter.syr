@@ -1,0 +1,439 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ProgramCounter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ProgramCounter.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ProgramCounter"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-csg324
+
+---- Source Options
+Top Module Name                    : ProgramCounter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Final_Year_Project\EC_448_Major_Project\ProgramCounter.v" into library work
+Parsing module <ProgramCounter>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ProgramCounter>.
+WARNING:HDLCompiler:413 - "D:\Final_Year_Project\EC_448_Major_Project\ProgramCounter.v" Line 65: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Final_Year_Project\EC_448_Major_Project\ProgramCounter.v" Line 72: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ProgramCounter>.
+    Related source file is "D:\Final_Year_Project\EC_448_Major_Project\ProgramCounter.v".
+        word_size = 16
+        high_impedance = 16'bzzzzzzzzzzzzzzzz
+        zero = 16'b0000000000000000
+    Found 16-bit register for signal <temp_address>.
+    Found 16-bit adder for signal <temp_address[15]_GND_1_o_add_5_OUT> created at line 72.
+    Found 1-bit tristate buffer for signal <address<15>> created at line 57
+    Found 1-bit tristate buffer for signal <address<14>> created at line 57
+    Found 1-bit tristate buffer for signal <address<13>> created at line 57
+    Found 1-bit tristate buffer for signal <address<12>> created at line 57
+    Found 1-bit tristate buffer for signal <address<11>> created at line 57
+    Found 1-bit tristate buffer for signal <address<10>> created at line 57
+    Found 1-bit tristate buffer for signal <address<9>> created at line 57
+    Found 1-bit tristate buffer for signal <address<8>> created at line 57
+    Found 1-bit tristate buffer for signal <address<7>> created at line 57
+    Found 1-bit tristate buffer for signal <address<6>> created at line 57
+    Found 1-bit tristate buffer for signal <address<5>> created at line 57
+    Found 1-bit tristate buffer for signal <address<4>> created at line 57
+    Found 1-bit tristate buffer for signal <address<3>> created at line 57
+    Found 1-bit tristate buffer for signal <address<2>> created at line 57
+    Found 1-bit tristate buffer for signal <address<1>> created at line 57
+    Found 1-bit tristate buffer for signal <address<0>> created at line 57
+    Found 16-bit comparator equal for signal <address[15]_jump_address[15]_equal_5_o> created at line 71
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <ProgramCounter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Registers                                            : 1
+ 16-bit register                                       : 1
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 4
+ 16-bit 2-to-1 multiplexer                             : 4
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 4
+ 16-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit ProgramCounter: 16 internal tristates are replaced by logic (pull-up yes): N10, N11, N12, N13, N14, N15, N16, N17, N18, N3, N4, N5, N6, N7, N8, N9.
+
+Optimizing unit <ProgramCounter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ProgramCounter, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ProgramCounter.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 84
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT3                        : 2
+#      LUT4                        : 5
+#      LUT6                        : 21
+#      MUXCY                       : 21
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 16
+#      FDE                         : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 20
+#      OBUFT                       : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              16  out of  54576     0%  
+ Number of Slice LUTs:                   45  out of  27288     0%  
+    Number used as Logic:                45  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     45
+   Number with an unused Flip Flop:      29  out of     45    64%  
+   Number with an unused LUT:             0  out of     45     0%  
+   Number of fully used LUT-FF pairs:    16  out of     45    35%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    190    19%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.963ns (Maximum Frequency: 252.337MHz)
+   Minimum input arrival time before clock: 4.881ns
+   Maximum output required time after clock: 3.668ns
+   Maximum combinational path delay: 5.776ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.963ns (frequency: 252.337MHz)
+  Total number of paths / destination ports: 392 / 16
+-------------------------------------------------------------------------
+Delay:               3.963ns (Levels of Logic = 9)
+  Source:            temp_address_1 (FF)
+  Destination:       temp_address_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: temp_address_1 to temp_address_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   0.755  temp_address_1 (temp_address_1)
+     LUT4:I2->O            1   0.203   0.580  Mcompar_address[15]_jump_address[15]_equal_5_o_lut<0>_SW1 (N20)
+     LUT6:I5->O            1   0.205   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_lut<0> (Mcompar_address[15]_jump_address[15]_equal_5_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<0> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<1> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<2> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<3> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<4> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<4>)
+     MUXCY:CI->O          16   0.213   1.005  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<5> (address[15]_jump_address[15]_equal_5_o)
+     LUT6:I5->O            1   0.205   0.000  Mmux_reset_GND_1_o_wide_mux_7_OUT17 (reset_GND_1_o_wide_mux_7_OUT<0>)
+     FDE:D                     0.102          temp_address_0
+    ----------------------------------------
+    Total                      3.963ns (1.623ns logic, 2.340ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 624 / 32
+-------------------------------------------------------------------------
+Offset:              4.881ns (Levels of Logic = 10)
+  Source:            jump_address<1> (PAD)
+  Destination:       temp_address_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: jump_address<1> to temp_address_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.898  jump_address_1_IBUF (jump_address_1_IBUF)
+     LUT4:I0->O            1   0.203   0.580  Mcompar_address[15]_jump_address[15]_equal_5_o_lut<0>_SW1 (N20)
+     LUT6:I5->O            1   0.205   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_lut<0> (Mcompar_address[15]_jump_address[15]_equal_5_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<0> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<1> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<2> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<3> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<4> (Mcompar_address[15]_jump_address[15]_equal_5_o_cy<4>)
+     MUXCY:CI->O          16   0.213   1.005  Mcompar_address[15]_jump_address[15]_equal_5_o_cy<5> (address[15]_jump_address[15]_equal_5_o)
+     LUT6:I5->O            1   0.205   0.000  Mmux_reset_GND_1_o_wide_mux_7_OUT17 (reset_GND_1_o_wide_mux_7_OUT<0>)
+     FDE:D                     0.102          temp_address_0
+    ----------------------------------------
+    Total                      4.881ns (2.398ns logic, 2.483ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            temp_address_15 (FF)
+  Destination:       address<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: temp_address_15 to address<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   0.650  temp_address_15 (temp_address_15)
+     OBUFT:I->O                2.571          address_15_OBUFT (address<15>)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Delay:               5.776ns (Levels of Logic = 3)
+  Source:            load_address (PAD)
+  Destination:       address<15> (PAD)
+
+  Data Path: load_address to address<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   0.773  load_address_IBUF (load_address_IBUF)
+     INV:I->O             16   0.206   1.004  load_address_inv1_INV_0 (load_address_inv)
+     OBUFT:T->O                2.571          address_15_OBUFT (address<15>)
+    ----------------------------------------
+    Total                      5.776ns (3.999ns logic, 1.776ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.963|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.33 secs
+ 
+--> 
+
+Total memory usage is 256524 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

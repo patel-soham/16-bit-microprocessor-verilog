@@ -1,0 +1,37 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Final_Year_Project/EC_448_Major_Project/TestTopModule_isim_beh.exe" -prj "D:/Final_Year_Project/EC_448_Major_Project/TestTopModule_beh.prj" "TestTopModule" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/Register.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/ProgramCounter.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/Memory.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/InstructionRegister.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/GeneralPurposeRegister.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/FlagRegister.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/Decoder.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/ArithmeticLogicUnit.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/TopModule.v" into library work
+Analyzing Verilog file "D:/Final_Year_Project/EC_448_Major_Project/TestTopModule.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:329 - "D:/Final_Year_Project/EC_448_Major_Project/TopModule.v" Line 160: Target <IR_reset> of concurrent assignment or output port connection should be a net type.
+WARNING:HDLCompiler:329 - "D:/Final_Year_Project/EC_448_Major_Project/TopModule.v" Line 161: Target <PC_reset> of concurrent assignment or output port connection should be a net type.
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module Memory
+Compiling module Register
+Compiling module InstructionRegister
+Compiling module ArithmeticLogicUnit
+Compiling module GeneralPurposeRegister
+Compiling module FlagRegister
+Compiling module Decoder
+Compiling module TopModule
+Compiling module TestTopModule
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable D:/Final_Year_Project/EC_448_Major_Project/TestTopModule_isim_beh.exe
+Fuse Memory Usage: 28312 KB
+Fuse CPU Usage: 577 ms
