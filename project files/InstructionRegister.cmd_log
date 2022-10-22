@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Final_Year_Project/EC_448_Major_Project/InstructionRegister.xst" -ofn "D:/Final_Year_Project/EC_448_Major_Project/InstructionRegister.syr" 
+xst -intstyle ise -ifn "D:/Final_Year_Project/EC_448_Major_Project/InstructionRegister.xst" -ofn "D:/Final_Year_Project/EC_448_Major_Project/InstructionRegister.syr" 

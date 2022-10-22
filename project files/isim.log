@@ -1,0 +1,125 @@
+ISim log file
+Running: D:\Final_Year_Project\EC_448_Major_Project\TestTopModule_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Final_Year_Project/EC_448_Major_Project/TestTopModule_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                  10data_out = 0000 mem[addr] = 0000 addr = 0000 
+                  30data_out = 0003 mem[addr] = 0003 addr = 0001 
+                  50data_out = ffff mem[addr] = ffff addr = 0002 
+                  70data_out = 001e mem[addr] = 001e addr = 0003 
+                  90data_out = 000a mem[addr] = 000a addr = 0004 
+                 110data_out = 0015 mem[addr] = 0015 addr = 0005 
+                 130data_out = 0000 mem[addr] = 0000 addr = 0006 
+                 150data_out = 00ff mem[addr] = 00ff addr = 0007 
+                 170data_out = 0000 mem[addr] = 0000 addr = 0008 
+                 190data_out = 01ff mem[addr] = 01ff addr = 0009 
+                 210data_out = 0000 mem[addr] = 0000 addr = 000a 
+                 230data_out = 0002 mem[addr] = 0002 addr = 000b 
+                 250data_out = 0001 mem[addr] = 0001 addr = 000c 
+                 270data_out = 0001 mem[addr] = 0001 addr = 000d 
+                 290data_out = 1111 mem[addr] = 1111 addr = 000e 
+                 310data_out = 0012 mem[addr] = 0012 addr = 000f 
+                 330data_out = 0000 mem[addr] = 0000 addr = 0010 
+                 350data_out = 00ff mem[addr] = 00ff addr = 0011 
+                 370data_out = 0000 mem[addr] = 0000 addr = 0012 
+                 390data_out = 01ff mem[addr] = 01ff addr = 0013 
+                 390data_out = 0000 mem[addr] = 0000 addr = 1111 
+                 410data_out = 0000 mem[addr] = 0000 addr = 0014 
+                 410data_out = 0000 mem[addr] = 0000 addr = 1111 
+                 430data_out = 0000 mem[addr] = 0000 addr = 0015 
+                 450data_out = 0000 mem[addr] = 0000 addr = 0016 
+                 470data_out = 0000 mem[addr] = 0000 addr = 0017 
+                 490data_out = 0000 mem[addr] = 0000 addr = 0018 
+                 510data_out = 0000 mem[addr] = 0000 addr = 0019 
+                 530data_out = 0000 mem[addr] = 0000 addr = 001a 
+                 550data_out = 0000 mem[addr] = 0000 addr = 001b 
+                 570data_out = 0000 mem[addr] = 0000 addr = 001c 
+                 590data_out = 0000 mem[addr] = 0000 addr = 001d 
+                 610data_out = 0000 mem[addr] = 0000 addr = 001e 
+                 630data_out = 0000 mem[addr] = 0000 addr = 001f 
+                 650data_out = 0000 mem[addr] = 0000 addr = 0020 
+                 670data_out = 0000 mem[addr] = 0000 addr = 0021 
+                 690data_out = 0000 mem[addr] = 0000 addr = 0022 
+                 710data_out = 0000 mem[addr] = 0000 addr = 0023 
+                 730data_out = 0000 mem[addr] = 0000 addr = 0024 
+                 750data_out = 0000 mem[addr] = 0000 addr = 0025 
+                 770data_out = 0000 mem[addr] = 0000 addr = 0026 
+                 790data_out = 0000 mem[addr] = 0000 addr = 0027 
+                 810data_out = 0000 mem[addr] = 0000 addr = 0028 
+                 830data_out = 0000 mem[addr] = 0000 addr = 0029 
+                 850data_out = 0000 mem[addr] = 0000 addr = 002a 
+                 870data_out = 0000 mem[addr] = 0000 addr = 002b 
+                 890data_out = 0000 mem[addr] = 0000 addr = 002c 
+                 910data_out = 0000 mem[addr] = 0000 addr = 002d 
+                 930data_out = 0000 mem[addr] = 0000 addr = 002e 
+                 950data_out = 0000 mem[addr] = 0000 addr = 002f 
+                 970data_out = 0000 mem[addr] = 0000 addr = 0030 
+                 990data_out = 0000 mem[addr] = 0000 addr = 0031 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                  10data_out = 0000 mem[addr] = 0000 addr = 0000 
+                  30data_out = 0003 mem[addr] = 0003 addr = 0001 
+                  50data_out = ffff mem[addr] = ffff addr = 0002 
+                  70data_out = 001e mem[addr] = 001e addr = 0003 
+                  90data_out = 000a mem[addr] = 000a addr = 0004 
+                 110data_out = 0015 mem[addr] = 0015 addr = 0005 
+                 130data_out = 0000 mem[addr] = 0000 addr = 0006 
+                 150data_out = 00ff mem[addr] = 00ff addr = 0007 
+                 170data_out = 0000 mem[addr] = 0000 addr = 0008 
+                 190data_out = 01ff mem[addr] = 01ff addr = 0009 
+                 210data_out = 0000 mem[addr] = 0000 addr = 000a 
+                 230data_out = 0002 mem[addr] = 0002 addr = 000b 
+                 250data_out = 0001 mem[addr] = 0001 addr = 000c 
+                 270data_out = 0001 mem[addr] = 0001 addr = 000d 
+                 290data_out = 1111 mem[addr] = 1111 addr = 000e 
+                 310data_out = 0012 mem[addr] = 0012 addr = 000f 
+                 330data_out = 0000 mem[addr] = 0000 addr = 0010 
+                 350data_out = 00ff mem[addr] = 00ff addr = 0011 
+                 370data_out = 0000 mem[addr] = 0000 addr = 0012 
+                 390data_out = 01ff mem[addr] = 01ff addr = 0013 
+                 390data_out = 0000 mem[addr] = 0000 addr = 1111 
+                 410data_out = 0000 mem[addr] = 0000 addr = 0014 
+                 410data_out = 0000 mem[addr] = 0000 addr = 1111 
+                 430data_out = 0000 mem[addr] = 0000 addr = 0015 
+                 450data_out = 0000 mem[addr] = 0000 addr = 0016 
+                 470data_out = 0000 mem[addr] = 0000 addr = 0017 
+                 490data_out = 0000 mem[addr] = 0000 addr = 0018 
+                 510data_out = 0000 mem[addr] = 0000 addr = 0019 
+                 530data_out = 0000 mem[addr] = 0000 addr = 001a 
+                 550data_out = 0000 mem[addr] = 0000 addr = 001b 
+                 570data_out = 0000 mem[addr] = 0000 addr = 001c 
+                 590data_out = 0000 mem[addr] = 0000 addr = 001d 
+                 610data_out = 0000 mem[addr] = 0000 addr = 001e 
+                 630data_out = 0000 mem[addr] = 0000 addr = 001f 
+                 650data_out = 0000 mem[addr] = 0000 addr = 0020 
+                 670data_out = 0000 mem[addr] = 0000 addr = 0021 
+                 690data_out = 0000 mem[addr] = 0000 addr = 0022 
+                 710data_out = 0000 mem[addr] = 0000 addr = 0023 
+                 730data_out = 0000 mem[addr] = 0000 addr = 0024 
+                 750data_out = 0000 mem[addr] = 0000 addr = 0025 
+                 770data_out = 0000 mem[addr] = 0000 addr = 0026 
+                 790data_out = 0000 mem[addr] = 0000 addr = 0027 
+                 810data_out = 0000 mem[addr] = 0000 addr = 0028 
+                 830data_out = 0000 mem[addr] = 0000 addr = 0029 
+                 850data_out = 0000 mem[addr] = 0000 addr = 002a 
+                 870data_out = 0000 mem[addr] = 0000 addr = 002b 
+                 890data_out = 0000 mem[addr] = 0000 addr = 002c 
+                 910data_out = 0000 mem[addr] = 0000 addr = 002d 
+                 930data_out = 0000 mem[addr] = 0000 addr = 002e 
+                 950data_out = 0000 mem[addr] = 0000 addr = 002f 
+                 970data_out = 0000 mem[addr] = 0000 addr = 0030 
+                 990data_out = 0000 mem[addr] = 0000 addr = 0031 
