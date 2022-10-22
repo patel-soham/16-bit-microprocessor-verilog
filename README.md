@@ -4,7 +4,7 @@ A final year undergraduate major project. (Dec 2019 - Mar 2020)
 - All modules were verified and tested individually and combined on ISim simulator.
 
 ---
-**Documents**\ \
+**Documents**\ 
 The below documents constains information on ISA table, individual blocks and its testing and final 5 test programs to test all functionalities of the processor.
 - [Final submitted report](<Major Project Full Report.pdf>)
 - [Final presentation](<Major Project PPT.pdf>)
