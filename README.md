@@ -19,3 +19,12 @@ A final year undergraduate major project. (Dec 2019 - Mar 2020)
 7. [General Purpose Register](<project files/GeneralPurposeRegister.v>)
 8. [Instruction Register](<project files/InstructionRegister.v>)
 9. [Program Counter](<project files/ProgramCounter.v>)
+
+**TestBench Files**
+1. [Top module](<project files/TestTopModule.v>)
+2. [Arithmetic and Logic Unit](<project files/TestALU.v>)
+4. [Memory](<project files/TestMemory.v>)
+5. [Register](<project files/TestRegister.v>) 
+7. [General Purpose Register](<project files/TestGPR.v>)
+8. [Instruction Register](<project files/TestIR.v>)
+9. [Program Counter](<project files/TestPC.v>)
